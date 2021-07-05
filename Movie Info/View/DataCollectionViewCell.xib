@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dataCollectionViewCell" id="gTV-IL-0wX" customClass="DataCollectionViewCell" customModule="Movie_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chm-8Z-Sab">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upside Down" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-kE-r5I">
+                        <rect key="frame" x="10" y="263.5" width="180" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Chm-8Z-Sab" secondAttribute="trailing" id="BmX-GK-2hk"/>
+                <constraint firstItem="QWV-kE-r5I" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Exa-et-Kzs"/>
+                <constraint firstAttribute="trailing" secondItem="QWV-kE-r5I" secondAttribute="trailing" constant="10" id="JsN-3R-tOK"/>
+                <constraint firstItem="QWV-kE-r5I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="RHl-aG-MBV"/>
+                <constraint firstItem="Chm-8Z-Sab" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bRp-wI-yyU"/>
+                <constraint firstAttribute="bottom" secondItem="Chm-8Z-Sab" secondAttribute="bottom" id="dXX-6c-Qu1"/>
+                <constraint firstAttribute="bottom" secondItem="QWV-kE-r5I" secondAttribute="bottom" constant="10" id="iLS-fG-Dtt"/>
+                <constraint firstItem="Chm-8Z-Sab" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yRU-H9-YEg"/>
+            </constraints>
+            <connections>
+                <outlet property="movieImages" destination="Chm-8Z-Sab" id="XQD-Fz-HiN"/>
+                <outlet property="movieTitle" destination="QWV-kE-r5I" id="JO2-n2-LzV"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="85"/>
+        </collectionViewCell>
+    </objects>
+</document>

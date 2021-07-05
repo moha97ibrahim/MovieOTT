@@ -16,6 +16,12 @@
 		EE13280C269082F300356DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE13280A269082F300356DCF /* LaunchScreen.storyboard */; };
 		EE132817269082F300356DCF /* Movie_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE132816269082F300356DCF /* Movie_InfoTests.swift */; };
 		EE132822269082F300356DCF /* Movie_InfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE132821269082F300356DCF /* Movie_InfoUITests.swift */; };
+		EE1328392690A86900356DCF /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1328382690A86900356DCF /* MovieManager.swift */; };
+		EE2B30BF2691F66000192846 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B30BE2691F66000192846 /* DataCollectionViewCell.swift */; };
+		EE2B30CC2691F9CD00192846 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B30CB2691F9CD00192846 /* DetailViewController.swift */; };
+		EE65749626915670002795E4 /* NewArraivalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65749526915670002795E4 /* NewArraivalModel.swift */; };
+		EE6574A526917D17002795E4 /* DataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE6574A326917D17002795E4 /* DataCollectionViewCell.xib */; };
+		EE95745B2690E28800A647F4 /* NewAraivaLData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE95745A2690E28800A647F4 /* NewAraivaLData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		EE13281D269082F300356DCF /* Movie InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE132821269082F300356DCF /* Movie_InfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_InfoUITests.swift; sourceTree = "<group>"; };
 		EE132823269082F300356DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1328382690A86900356DCF /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		EE2B30BE2691F66000192846 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE2B30CB2691F9CD00192846 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EE65749526915670002795E4 /* NewArraivalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArraivalModel.swift; sourceTree = "<group>"; };
+		EE6574A326917D17002795E4 /* DataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE95745A2690E28800A647F4 /* NewAraivaLData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAraivaLData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,12 @@
 		EE1327FB269082EB00356DCF /* Movie Info */ = {
 			isa = PBXGroup;
 			children = (
+				EE9574592690E25F00A647F4 /* Api */,
+				EE1328372690A84C00356DCF /* Controller */,
+				EE1328362690A83600356DCF /* View */,
+				EE1328352690A83000356DCF /* Model */,
 				EE1327FC269082EB00356DCF /* AppDelegate.swift */,
 				EE1327FE269082EB00356DCF /* SceneDelegate.swift */,
-				EE132800269082EB00356DCF /* ViewController.swift */,
-				EE132802269082EB00356DCF /* Main.storyboard */,
 				EE132808269082F300356DCF /* Assets.xcassets */,
 				EE13280A269082F300356DCF /* LaunchScreen.storyboard */,
 				EE13280D269082F300356DCF /* Info.plist */,
@@ -129,6 +143,42 @@
 				EE132823269082F300356DCF /* Info.plist */,
 			);
 			path = "Movie InfoUITests";
+			sourceTree = "<group>";
+		};
+		EE1328352690A83000356DCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE95745A2690E28800A647F4 /* NewAraivaLData.swift */,
+				EE65749526915670002795E4 /* NewArraivalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE1328362690A83600356DCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE6574A326917D17002795E4 /* DataCollectionViewCell.xib */,
+				EE132802269082EB00356DCF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE1328372690A84C00356DCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B30BE2691F66000192846 /* DataCollectionViewCell.swift */,
+				EE132800269082EB00356DCF /* ViewController.swift */,
+				EE2B30CB2691F9CD00192846 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE9574592690E25F00A647F4 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				EE1328382690A86900356DCF /* MovieManager.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6574A526917D17002795E4 /* DataCollectionViewCell.xib in Resources */,
 				EE13280C269082F300356DCF /* LaunchScreen.storyboard in Resources */,
 				EE132809269082F300356DCF /* Assets.xcassets in Resources */,
 				EE132804269082EB00356DCF /* Main.storyboard in Resources */,
@@ -261,10 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2B30CC2691F9CD00192846 /* DetailViewController.swift in Sources */,
+				EE2B30BF2691F66000192846 /* DataCollectionViewCell.swift in Sources */,
 				EE132801269082EB00356DCF /* ViewController.swift in Sources */,
+				EE95745B2690E28800A647F4 /* NewAraivaLData.swift in Sources */,
 				EE1327FD269082EB00356DCF /* AppDelegate.swift in Sources */,
+				EE1328392690A86900356DCF /* MovieManager.swift in Sources */,
 				EE132807269082EB00356DCF /* Movie_Info.xcdatamodeld in Sources */,
 				EE1327FF269082EB00356DCF /* SceneDelegate.swift in Sources */,
+				EE65749626915670002795E4 /* NewArraivalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
